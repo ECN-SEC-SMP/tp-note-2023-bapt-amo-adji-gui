@@ -4,34 +4,35 @@ using namespace std;
 #ifndef class_player_h
 #define class_player_h
 
-class player{
-    private : 
-        string player_name;
-        int total_move = 0;
-        int announced_move = 0;
-        int point = 0;
+class Player
+{
+private:
+    string player_name;
+    int total_move = 0;
+    int announced_move = 0;
+    int point = 0;
 
-        void add_move;
+    void add_move();
 
-    public : 
-    //constructeur 
-    player();
-    //accesseur 
+public:
+    // constructeur
+    Player();
+    // accesseur
     string get_name();
     int get_total_move();
     int get_announced_move();
     int get_point();
 
-    //methode
-    //total move 
+    // methode
+    // total move
     void set_name();
     void reset_moves();
 
     // announced_move
     void reset_announced_move();
-    void set_annonced_move(int move_nb);
+    void set_announced_move();
 
-    //point 
+    // point
     void add_point();
 };
 
