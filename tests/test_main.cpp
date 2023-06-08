@@ -112,6 +112,14 @@ void test_shape()
   /* Format to use for tests*/
 }
 
+/**
+ * @brief Test the player fonction 
+ * 
+ * @details This fonction create a player call p1, 
+ *          print all the information on the player,
+ *          change the value of player atribute and print them all again, 
+ *          reset all the attribut and print them all. 
+ */
 void test_player()
 {
   Player p1; // joueur 1 
