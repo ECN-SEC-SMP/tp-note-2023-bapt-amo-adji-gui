@@ -114,30 +114,33 @@ void test_shape()
 
 void test_player()
 {
-  Player p1 = Player(); // joueur 1
+  Player p1; // joueur 1 
 
   // Affichage des coordonnées initiales
-  cout << "Player 1 " << p1.get_player_name() << " nombre de mouvement total : " << p1.get_move()
-       << " nombre de mouvement annoncé" << p1.get_announced_move()
-       << " nombre de point : " << p1.get_point() << endl;
+    cout << " Player 1 " << p1.get_name() 
+         << " nombre de mouvement total : " << p1.get_total_move() 
+         << " nombre de mouvement annoncé" << p1.get_announced_move() 
+         << " nombre de point : " << p1.get_point() << endl;
 
   // Modification des mouvement
-  p1.add_move();
-  p1.set_announced_move(12);
-  p1.add_point();
+    p1.add_move();
+    p1.set_announced_move();
+    p1.add_point();
 
   // Affichage des mouvement modifiées
-  cout << "player 1 " << p1.get_player_name() << " nombre de mouvement total : " << p1.get_move()
-       << " nombre de mouvement annoncé" << p1.get_announced_move()
-       << " nombre de point : " << p1.get_point() << endl;
+    cout << " Player 1 " << p1.get_name() 
+         << " nombre de mouvement total : " << p1.get_total_move() 
+         << " nombre de mouvement annoncé :" << p1.get_announced_move() 
+         << " nombre de point : " << p1.get_point() << endl ; 
 
   // Reset des mouvements
-  p1.reset_move();
-  p1.reset_announced_move();
-  p1.reset_point();
+    p1.reset_move();
+    p1.reset_announced_move(); 
+    p1.reset_point();   
 
   // Affichage des mouvement resest
-  cout << "player 1 " << p1.get_player_name() << " nombre de mouvement total : " << p1.get_move()
-       << " nombre de mouvement annoncé :" << p1.get_announced_move()
-       << " nombre de point : " << p1.get_point() << endl;
+    cout << " Player 1 " << p1.get_name() 
+         << " nombre de mouvement total : " << p1.get_total_move() 
+         << " nombre de mouvement annoncé :" << p1.get_announced_move() 
+         << " nombre de point : " << p1.get_point() << endl ;
 }

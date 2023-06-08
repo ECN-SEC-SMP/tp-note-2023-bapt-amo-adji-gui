@@ -12,8 +12,6 @@ private:
     int announced_move = 0;
     int point = 0;
 
-    void add_move();
-
 public:
     // constructeur
     Player();
@@ -25,15 +23,17 @@ public:
 
     // methode
     // total move
-    void set_name();
-    void reset_moves();
-
+    void reset_move();
+    void add_move();
+    
     // announced_move
     void reset_announced_move();
     void set_announced_move();
 
     // point
     void add_point();
+    void reset_point();
+    
 };
 
 #endif

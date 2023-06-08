@@ -34,9 +34,14 @@ int Player::get_point()
 
 // methode
 // total move
-void Player::reset_moves()
+void Player::reset_move()
 {
     this->total_move = 0;
+}
+
+void Player::reset_point()
+{
+    this->point = 0;
 }
 
 void Player::add_move()
