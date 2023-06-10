@@ -5,6 +5,7 @@ using namespace std;
 
 #include "board.h"
 #include "player.h"
+#include "Tile.h"
 
 class gameController {
 private:
