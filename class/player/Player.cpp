@@ -12,50 +12,50 @@ Player::Player()
 }
 
 // accesseur
-string Player::get_name()
+string Player::getName()
 {
     return this->player_name;
 }
 
-int Player::get_total_move()
+int Player::getTotalMove()
 {
     return this->total_move;
 }
 
-int Player::get_announced_move()
+int Player::getAnnouncedMove()
 {
     return this->announced_move;
 }
 
-int Player::get_point()
+int Player::getPoint()
 {
     return this->point;
 }
 
 // methode
 // total move
-void Player::reset_move()
+void Player::resetMove()
 {
     this->total_move = 0;
 }
 
-void Player::reset_point()
+void Player::resetPoint()
 {
     this->point = 0;
 }
 
-void Player::add_move()
+void Player::addMove()
 {
     this->total_move += 1;
 }
 
 // announced move
-void Player::reset_announced_move()
+void Player::resetAnnouncedMove()
 {
     this->announced_move = 0;
 }
 
-void Player::set_announced_move()
+void Player::setAnnouncedMove()
 {
     cout << "How many move do you need to reache the tile : " << endl;
     int move;
@@ -64,7 +64,7 @@ void Player::set_announced_move()
 }
 
 // point
-void Player::add_point()
+void Player::addPoint()
 {
     this->point += 1;
 }
