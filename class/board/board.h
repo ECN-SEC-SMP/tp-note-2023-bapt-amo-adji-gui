@@ -1,9 +1,7 @@
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
-#include "helper.h"
 #include "../box/box.h"
-#include "../../constants.h"
 
 class Board
 {
@@ -71,12 +69,12 @@ public:
     Board();
 
     // TODO: Create the function (calling helper ?)
-    // void renderBoard();
+    void renderBoard();
     void renderDebugBoard();
 
     // // TODO: Add the two methods
     // // As documentation says : 0=move_done, 1=can_t_go_there, 2=goal_reached
-    // int move(Color robotColor, Direction dir);
+    int move(Color robotColor, Direction dir);
 };
 
 #endif //_BOARD_H_

@@ -1,6 +1,11 @@
-#include "board.h"
 #include "../../constants.h"
+#include "helper.h"
+#include "display.h"
+#include "board.h"
+
 #include <iostream>
+#include <stdexcept>
+
 using namespace std;
 
 /*********************************PRIVATE********************************/
@@ -152,6 +157,11 @@ Board::Board()
     this->addCenterSquare();
     this->addInsideWalls();
     this->addCorners();
+}
+
+void Board::renderBoard()
+{
+    // print_board(this->boxBoard);
 }
 
 void Board::renderDebugBoard()
