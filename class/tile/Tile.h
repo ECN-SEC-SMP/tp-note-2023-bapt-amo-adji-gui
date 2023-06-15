@@ -8,6 +8,7 @@ class Tile
 private:
   Shape shape;
   Color color;
+  bool goal;
 
 public:
   // Constructeurs
@@ -17,10 +18,12 @@ public:
   // Accesseurs
   Color getColor() const;
   Shape getShape() const;
+  bool isGoal() const;
 
   // Mutateurs
   void setColor(Color _color);
   void setShape(Shape _shape);
+  void setGoal();
 };
 
 #endif

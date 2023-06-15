@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cassert>
+#include <iostream>
 
 #include "tests.h"
 
@@ -14,15 +14,13 @@ using namespace std;
 // }
 /* Format to use for tests*/
 
-void tests()
-{
+void tests() {
   test_robot();
   test_shape();
   test_player();
 }
 
-void test_robot()
-{
+void test_robot() {
   Robot robot1; // Default constructor
   // Assert color is right
   assert(robot1.getColor() == eBlue);
@@ -37,8 +35,7 @@ void test_robot()
   std::cout << "Robot: All tests succeded" << std::endl;
 }
 
-void test_shape()
-{
+void test_shape() {
   Tile tile1; // Default constructor
   assert(tile1.getShape() == eTriangle);
   assert(tile1.getColor() == eBlue);
@@ -64,35 +61,35 @@ void test_shape()
  *          change the value of player atribute and print them all again,
  *          reset all the attribut and print them all.
  */
-void test_player()
-{
+void test_player() {
   Player p1; // joueur 1
 
   // Affichage des coordonnées initiales
-  cout << " Player 1 " << p1.get_name()
-       << " nombre de mouvement total : " << p1.get_total_move()
-       << " nombre de mouvement annoncé" << p1.get_announced_move()
-       << " nombre de point : " << p1.get_point() << endl;
+  cout << "Player 1 name is " << p1.getName() << endl;
+  cout << "Total moves are: " << p1.getTotalMove() << endl;
+  cout << "Total announced moved are:" << p1.getAnnouncedMove() << endl;
+  cout << "Point number are: " << p1.getPoint() << endl;
 
+  cout << "-->Adding 1 move, point and getting announced move" << endl;
   // Modification des mouvement
-  p1.add_move();
-  p1.set_announced_move();
-  p1.add_point();
+  p1.addMove();
+  p1.setAnnouncedMove();
+  p1.addPoint();
 
-  // Affichage des mouvement modifiées
-  cout << " Player 1 " << p1.get_name()
-       << " nombre de mouvement total : " << p1.get_total_move()
-       << " nombre de mouvement annoncé :" << p1.get_announced_move()
-       << " nombre de point : " << p1.get_point() << endl;
+  cout << "Player 1 name is " << p1.getName() << endl;
+  cout << "Total moves are: " << p1.getTotalMove() << endl;
+  cout << "Total announced moved are:" << p1.getAnnouncedMove() << endl;
+  cout << "Point number are: " << p1.getPoint() << endl;
 
   // Reset des mouvements
-  p1.reset_move();
-  p1.reset_announced_move();
-  p1.reset_point();
+  p1.resetMove();
+  p1.resetAnnouncedMove();
+  p1.resetPoint();
 
+  cout << "-->Resetting everything" << endl;
   // Affichage des mouvement resest
-  cout << " Player 1 " << p1.get_name()
-       << " nombre de mouvement total : " << p1.get_total_move()
-       << " nombre de mouvement annoncé :" << p1.get_announced_move()
-       << " nombre de point : " << p1.get_point() << endl;
+  cout << "Player 1 name is " << p1.getName() << endl;
+  cout << "Total moves are: " << p1.getTotalMove() << endl;
+  cout << "Total announced moved are:" << p1.getAnnouncedMove() << endl;
+  cout << "Point number are: " << p1.getPoint() << endl;
 }

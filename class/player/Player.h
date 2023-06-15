@@ -13,82 +13,82 @@ private:
     int point = 0;
 
 public:
-    //constructeur 
+    // constructeur
     /**
      * @brief Construct a new Player object
-     *   
+     *
      */
     Player();
 
     // accesseur
     /**
      * @brief Get the name object
-     * 
+     *
      * @return string The name of the registered player
      */
-    string get_name();
+    string getName();
 
     /**
      * @brief Get the total move object
-     * 
-     * @return int 
+     *
+     * @return int
      */
-    int get_total_move();
+    int getTotalMove();
 
     /**
      * @brief Get the announced move object
-     * 
-     * @return int 
+     *
+     * @return int
      */
-    int get_announced_move();
+    int getAnnouncedMove();
 
     /**
      * @brief Get the point object
-     * 
-     * @return int 
+     *
+     * @return int
      */
-    int get_point();
+    int getPoint();
 
     // methode
     // total move
 
     /**
-     * @brief Reset the number of total move to 0 
-     * 
+     * @brief Reset the number of total move to 0
+     *
      */
-    void reset_move();
+    void resetMove();
 
     /**
      * @brief Add a move to total move value
-     * 
+     *
      */
-    void add_move();
-    
+    void addMove();
+
     // announced_move
     /**
      * @brief Reset the number of annonced move to 0 at each turn
-     * 
+     *
      */
-    void reset_announced_move();
+    void resetAnnouncedMove();
 
     /**
      * @brief Set the announced move object
-     * 
+     *
      */
-    void set_announced_move();
+    void setAnnouncedMove();
 
     // point
     /**
-     * @brief Add a point to the player 
-     * 
+     * @brief Add a point to the player
+     *
      */
-    void add_point();
+    void addPoint();
 
     /**
-     * @brief reset the number of point to 0 
-     * 
+     * @brief reset the number of point to 0
+     *
      */
-    void reset_point();
+    void resetPoint();
 };
 
 #endif
