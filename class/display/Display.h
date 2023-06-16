@@ -4,12 +4,9 @@ https://www.makeuseof.com/windows-alt-codes/
 https://stackoverflow.com/questions/2616906/how-do-i-output-coloured-text-to-a-linux-terminal
 */
 
-#include "../../constants.h"
+
 #include "../board/board.h"
-#include "../board/helper.h"
-#include "../box/box.h"
-#include "../robot/Robot.h"
-#include "../tile/Tile.h"
+#include "../../constants.h"
 
 /**
  * @brief Print a colored smiley to represent the different robot
